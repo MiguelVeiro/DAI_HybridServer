@@ -1,0 +1,2345 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="NITRO5MVR" id="0" name="HybridServerFirstReleaseTestSuite" package="es.uvigo.esei.dai.hybridserver" skipped="0" tests="116" time="2.203" timestamp="2021-10-20T09:34:48">
+      <properties>
+          <property name="ant.library.dir" value="C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib" />
+
+          <property name="java.specification.version" value="16" />
+
+          <property name="ant.project.name" value="HybridServer" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="java.class.path" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\bin;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\commons-logging-1.1.3.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\dbunit-2.5.3.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\derby.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\fluent-hc-4.3.5.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\httpclient-4.3.5.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\httpcore-4.3.2.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\java-hamcrest-2.0.0.0.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\junit-4.12.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\mysql-connector-java-8.0.21.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\slf4j-api-1.7.7.jar;D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\lib\slf4j-simple-1.7.7.jar;C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib\ant-launcher.jar;C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib\ant.jar;C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib\ant-junit.jar;C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib\ant-junit4.jar" />
+
+          <property name="ant.file.HybridServer" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\build.xml" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="user.variant" value="" />
+
+          <property name="java.vendor.url" value="https://java.oracle.com/" />
+
+          <property name="ant.file.type.HybridServer" value="file" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="java.vm.specification.version" value="16" />
+
+          <property name="user.country" value="ES" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="group" value="Grupo.1.3" />
+
+          <property name="sun.boot.library.path" value="C:\Users\migue\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner es.uvigo.esei.dai.hybridserver.HybridServerFirstReleaseTestSuite skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\test.report.xml crashfile=D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\junitvmwatcher6478848094757816282.properties propsfile=D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\junit5722097570641018185.properties" />
+
+          <property name="jdk.debug" value="release" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="user.home" value="C:\Users\migue" />
+
+          <property name="user.language" value="es" />
+
+          <property name="eclipse.pdebuild.templates" value="C:\Users\migue\eclipse\jee-2021-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.11.0.v20210429-0618\templates" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.version.date" value="2021-07-20" />
+
+          <property name="java.home" value="C:\Users\migue\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre" />
+
+          <property name="basedir" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="eclipse.pdebuild.home" value="C:\Users\migue\eclipse\jee-2021-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.11.0.v20210429-0618\." />
+
+          <property name="java.vm.compressedOopsMode" value="32-bit" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="ant.java.version" value="16" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="user.script" value="" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.runtime.version" value="16.0.2+7-67" />
+
+          <property name="user.name" value="migue" />
+
+          <property name="ant.file" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\build.xml" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+
+          <property name="ant.project.invoked-targets" value="release" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+
+          <property name="report.dir" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer\report" />
+
+          <property name="ant.core.lib" value="C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926\lib\ant.jar" />
+
+          <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+
+          <property name="java.io.tmpdir" value="C:\Users\migue\AppData\Local\Temp\" />
+
+          <property name="report.file" value="test.report" />
+
+          <property name="java.version" value="16.0.2" />
+
+          <property name="user.dir" value="D:\Miguel\Clase\Universidad\4o año\Desarrollo de Aplicaciones para Internet\HybridServer" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.home" value="C:\Users\migue\.p2\pool\plugins\org.apache.ant_1.10.10.v20210426-1926" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.10 compiled on April 12 2021" />
+
+          <property name="java.library.path" value="C:\Users\migue\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/migue/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/migue/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\swipl\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\migue\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jre1.8.0_201\bin;C:\MinGW\bin;C:\Users\migue\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\migue\AppData\Local\GitHubDesktop\bin;C:\Windows\system32;;." />
+
+          <property name="eclipse.pdebuild.scripts" value="C:\Users\migue\eclipse\jee-2021-06\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.11.0.v20210429-0618\scripts" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="java.vm.version" value="16.0.2+7-67" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="java.class.version" value="60.0" />
+
+          <property name="ant.project.default-target" value="release" />
+
+      </properties>
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.WelcomePageTest" name="testMultipleWelcome" time="0.488" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.WelcomePageTest" name="testWelcome" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPBadRequestsTest" name="test[Missing method]" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPBadRequestsTest" name="test[Missing resource]" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPBadRequestsTest" name="test[Missing version]" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPBadRequestsTest" name="test[Missing first line]" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPBadRequestsTest" name="test[Invalid header]" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetResourceChain" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testToString" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetHttpVersion" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetHeaderParameters" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetResourceName" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetResourcePath" time="0.002" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetMethod" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetContentLength" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETRootTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetResourceChain" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testToString" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetHeaderParameters" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetResourceName" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetResourcePath" time="0.007" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetMethod" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetContentLength" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourceTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetResourceChain" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testToString" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetHeaderParameters" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetResourceName" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetResourcePath" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetMethod" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetContentLength" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETResourcesTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetResourceChain" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testToString" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetHeaderParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetResourceName" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetResourcePath" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetContent" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetMethod" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetContentLength" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestGETParametersTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetResourceChain" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testToString" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetHeaderParameters" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetResourceName" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetResourcePath" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetMethod" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetContentLength" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTOneParameterTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetResourceChain" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testToString" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetHeaderParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetResourceName" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetResourcePath" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetMethod" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetContentLength" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTMultipleParametersTest" name="testGetResourceParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetResourceChain" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testToString" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetHttpVersion" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetHeaderParameters" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetResourceName" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetResourcePath" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetContent" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetMethod" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetContentLength" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPRequestPOSTEncodedTest" name="testGetResourceParameters" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPResponseNoContentTest" name="testPrint" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPResponseNoContentWithHeadersTest" name="testPrint" time="0.001" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPResponseTest" name="testPrint" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week1.HTTPResponseWithHeadersTest" name="testPrint" time="0.0" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testPostInvalidContent" time="0.012" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testPost" time="0.007" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testGetInvalidResource" time="0.006" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testGetInvalidHtmlPage" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testGetHtmlList" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testGetHtmlPage" time="0.022" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testDelete" time="0.006" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week2.ClientRequetsTest" name="testDeleteNonexistentPage" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[0]" time="0.018" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[0]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[1]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[1]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[2]" time="0.023" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[2]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[3]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[3]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[4]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[4]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[5]" time="0.016" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[5]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[6]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[6]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[7]" time="0.019" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[7]" time="0.004" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[8]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[8]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testMultipleWelcome[9]" time="0.017" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.CustomPortTest" name="testWelcome[9]" time="0.003" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testPostInvalidContent" time="0.688" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testPost" time="0.09" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testGetInvalidResource" time="0.07" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testGetInvalidHtmlPage" time="0.07" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testGetHtmlList" time="0.077" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testDelete" time="0.083" />
+
+      <testcase classname="es.uvigo.esei.dai.hybridserver.week3.ClientRequestsWithDatabaseTest" name="testDeleteNonexistentPage" time="0.065" />
+
+      <system-out><![CDATA[GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+POST /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Content-Length: 62
+Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+xxx=<html><body>Testing POST</body></html>
+------------
+HTTP/1.1 400 OK
+Content-Length: 11
+
+Bad Request
+------------
+POST /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Content-Length: 63
+Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+html=<html><body>Testing POST</body></html>
+------------
+HTTP/1.1 200 OK
+Content-Length: 1361
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="html?uuid=d8cf2239-bb49-4af5-b4c8-deaf248cc047">d8cf2239-bb49-4af5-b4c8-deaf248cc047</a></li><li><a href="html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373">77ec1d68-84e1-40f4-be8e-066e02f4e373</a></li><li><a href="html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+GET /html?uuid=d8cf2239-bb49-4af5-b4c8-deaf248cc047 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 38
+
+<html><body>Testing POST</body></html>
+------------
+GET /xxx?uuid=[Ljava.lang.String;@751a8d3c HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 400 OK
+Content-Length: 11
+
+Bad Request
+------------
+GET /html?uuid=12345678-abcd-1234-ab12-9876543210ab HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+GET /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 1475
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="http://localhost:8888/html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="http://localhost:8888/html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="http://localhost:8888/html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="http://localhost:8888/html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="http://localhost:8888/html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="http://localhost:8888/html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373">77ec1d68-84e1-40f4-be8e-066e02f4e373</a></li><li><a href="http://localhost:8888/html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="http://localhost:8888/html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="http://localhost:8888/html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="http://localhost:8888/html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+GET /html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 6df1047e-cf19-4a83-8cf3-38f5e53f7725.
+------------
+GET /html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 79e01232-5ea4-41c8-9331-1c1880a1d3c2.
+------------
+GET /html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page a35b6c5e-22d6-4707-98b4-462482e26c9e.
+------------
+GET /html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 3aff2f9c-0c7f-4630-99ad-27a0cf1af137.
+------------
+GET /html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 77ec1d68-84e1-40f4-be8e-066e02f4e373.
+------------
+GET /html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 8f824126-0bd1-4074-b88e-c0b59d3e67a3.
+------------
+GET /html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page c6c80c75-b335-4f68-b7a7-59434413ce6c.
+------------
+GET /html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page f959ecb3-6382-4ae5-9325-8fcbc068e446.
+------------
+GET /html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page 2471caa8-e8df-44d6-94f2-7752a74f6819.
+------------
+GET /html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 59
+
+This is the html page fa0979ca-2734-41f7-84c5-e40e0886e408.
+------------
+DELETE /html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 1149
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+GET /html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+DELETE /html?uuid=12345678-abcd-1234-ab12-9876543210ab HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:1234
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:4242
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:7315
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8833
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:10201
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:21386
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:33217
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:45450
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:55881
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+GET / HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:60000
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 239
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1>Autores: Miguel Veiro Romero, Martín Pereira González.</body></html>
+------------
+POST /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Content-Length: 62
+Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+xxx=<html><body>Testing POST</body></html>
+------------
+HTTP/1.1 400 OK
+Content-Length: 11
+
+Bad Request
+------------
+POST /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Content-Length: 63
+Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+html=<html><body>Testing POST</body></html>
+------------
+HTTP/1.1 200 OK
+Content-Length: 1361
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="html?uuid=b4796484-3416-46c2-888b-a9fb6c964288">b4796484-3416-46c2-888b-a9fb6c964288</a></li><li><a href="html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373">77ec1d68-84e1-40f4-be8e-066e02f4e373</a></li><li><a href="html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+GET /html?uuid=b4796484-3416-46c2-888b-a9fb6c964288 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 38
+
+<html><body>Testing POST</body></html>
+------------
+GET /xxx?uuid=[Ljava.lang.String;@44d52de2 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 400 OK
+Content-Length: 11
+
+Bad Request
+------------
+GET /html?uuid=12345678-abcd-1234-ab12-9876543210ab HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+GET /html HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 1475
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="http://localhost:8888/html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="http://localhost:8888/html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="http://localhost:8888/html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="http://localhost:8888/html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="http://localhost:8888/html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="http://localhost:8888/html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373">77ec1d68-84e1-40f4-be8e-066e02f4e373</a></li><li><a href="http://localhost:8888/html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="http://localhost:8888/html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="http://localhost:8888/html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="http://localhost:8888/html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+DELETE /html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 200 OK
+Content-Length: 1149
+
+<!DOCTYPE html><html lang="es"><head>  <meta charset="utf-8"/>  <title>Hybrid Server</title>  <link href="style.css" rel="stylesheet" /></head><body><h1>Hybrid Server</h1><ol><li><a href="html?uuid=3aff2f9c-0c7f-4630-99ad-27a0cf1af137">3aff2f9c-0c7f-4630-99ad-27a0cf1af137</a></li><li><a href="html?uuid=79e01232-5ea4-41c8-9331-1c1880a1d3c2">79e01232-5ea4-41c8-9331-1c1880a1d3c2</a></li><li><a href="html?uuid=f959ecb3-6382-4ae5-9325-8fcbc068e446">f959ecb3-6382-4ae5-9325-8fcbc068e446</a></li><li><a href="html?uuid=2471caa8-e8df-44d6-94f2-7752a74f6819">2471caa8-e8df-44d6-94f2-7752a74f6819</a></li><li><a href="html?uuid=6df1047e-cf19-4a83-8cf3-38f5e53f7725">6df1047e-cf19-4a83-8cf3-38f5e53f7725</a></li><li><a href="html?uuid=a35b6c5e-22d6-4707-98b4-462482e26c9e">a35b6c5e-22d6-4707-98b4-462482e26c9e</a></li><li><a href="html?uuid=fa0979ca-2734-41f7-84c5-e40e0886e408">fa0979ca-2734-41f7-84c5-e40e0886e408</a></li><li><a href="html?uuid=c6c80c75-b335-4f68-b7a7-59434413ce6c">c6c80c75-b335-4f68-b7a7-59434413ce6c</a></li><li><a href="html?uuid=8f824126-0bd1-4074-b88e-c0b59d3e67a3">8f824126-0bd1-4074-b88e-c0b59d3e67a3</a></li></ol>
+</body></html>
+------------
+GET /html?uuid=77ec1d68-84e1-40f4-be8e-066e02f4e373 HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+GET /html?uuid=12345678-abcd-1234-ab12-9876543210ab HTTP/1.1
+Connection: close
+Content-encoding: UTF-8
+Host: localhost:8888
+User-Agent: Apache-HttpClient/4.3.5 (java 1.5)
+Accept-Encoding: gzip,deflate
+
+------------
+HTTP/1.1 404 OK
+Content-Length: 9
+
+Not Found
+------------
+]]></system-out>
+
+      <system-err><![CDATA[Invalid header: Host
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAAAA
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+AAAAAAAAAA
+]]></system-err>
+
+  </testsuite>
+</testsuites>
