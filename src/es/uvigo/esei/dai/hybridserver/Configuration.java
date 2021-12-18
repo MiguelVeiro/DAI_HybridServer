@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Configuration {
+	
 	private int httpPort;
 	private int numClients;
 	private String webServiceURL;
@@ -43,7 +44,7 @@ public class Configuration {
 		);
 	}
 	
-	public Configuration(
+	public Configuration (
 		int httpPort,
 		int numClients,
 		String webServiceURL,

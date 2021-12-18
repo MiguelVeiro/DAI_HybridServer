@@ -18,6 +18,7 @@
 package es.uvigo.esei.dai.hybridserver;
 
 public class ServerConfiguration {
+	
 	private String name;
 	private String wsdl;
 	private String namespace;
