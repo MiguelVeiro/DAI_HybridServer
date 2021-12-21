@@ -29,26 +29,35 @@ public class ConfigurationContentHandler extends DefaultHandler {
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+		
 		if ("configuration".equals(localName)) {
 			this.configuration = new Configuration();
+			
 		} else if ("connections".equals(localName)) {
 
 		} else if ("http".equals(localName)) {
 			http = true;
+			
 		} else if ("webservice".equals(localName)) {
 			webservice = true;
+			
 		} else if ("numClients".equals(localName)) {
 			numClients = true;
+			
 		} else if ("database".equals(localName)) {
 			
 		} else if ("user".equals(localName)) {
 			user = true;
+			
 		} else if ("password".equals(localName)) {
 			password = true;
+			
 		} else if ("url".equals(localName)) {
 			url = true;
+			
 		} else if ("servers".equals(localName)) {
 			this.serverConfigs = new LinkedList<>();
+			
 		} else if ("server".equals(localName)) {
 			ServerConfiguration serverConfig = new ServerConfiguration(
 				attributes.getValue("name"),
@@ -58,25 +67,34 @@ public class ConfigurationContentHandler extends DefaultHandler {
 				attributes.getValue("httpAddress")
 			);
 			serverConfigs.add(serverConfig);
+			
 		}
 	}
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
+		
 		String textContent = new String(ch, start, length);
 		if (!textContent.trim().isEmpty()) {
+			
 			if (http) {
 				this.configuration.setHttpPort(Integer.parseInt(textContent));
+				
 			} else if (webservice) {
 				this.configuration.setWebServiceURL(textContent);
+				
 			} else if (numClients) {
 				this.configuration.setNumClients(Integer.parseInt(textContent));
+				
 			} else if (user) {
 				this.configuration.setDbUser(textContent);
+				
 			} else if (password) {
 				this.configuration.setDbPassword(textContent);
+				
 			} else if (url) {
 				this.configuration.setDbURL(textContent);
+				
 			}
 		}
 		
@@ -84,26 +102,34 @@ public class ConfigurationContentHandler extends DefaultHandler {
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
+		
 		if ("configuration".equals(localName)) {
 
 		} else if ("connections".equals(localName)) {
 			
 		} else if ("http".equals(localName)) {
 			http = false;
+			
 		} else if ("webservice".equals(localName)) {
 			webservice = false;
+			
 		} else if ("numClients".equals(localName)) {
 			numClients = false;
+			
 		} else if ("database".equals(localName)) {
 			
 		} else if ("user".equals(localName)) {
 			user = false;
+			
 		} else if ("password".equals(localName)) {
 			password = false;
+			
 		} else if ("url".equals(localName)) {
 			url = false;
+			
 		} else if ("servers".equals(localName)) {
 			this.configuration.setServers(serverConfigs);
+			
 		} else if ("server".equals(localName)) {
 			
 		}

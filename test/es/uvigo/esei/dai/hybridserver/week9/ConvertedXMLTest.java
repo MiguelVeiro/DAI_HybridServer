@@ -75,7 +75,7 @@ extends JdbcTestCase {
 			  "1fd26c94-6909-11e4-9a75-685b35c84fb4",
 			  readToString(getClass().getResourceAsStream("sample1.xml")), 
 			  readToString(getClass().getResourceAsStream("sample1.html")) 
-			 },
+			},
 			{ "ea118888-6908-11e4-9620-685b35c84fb4",
 			  "1fd26c94-6909-11e4-9a75-685b35c84fb4",
 			  "f260dfee-636c-11e4-bbdd-685b35c84fb4",

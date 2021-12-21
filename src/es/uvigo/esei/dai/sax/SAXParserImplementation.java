@@ -21,26 +21,46 @@ public class SAXParserImplementation {
 	// Procesado y validación con un XSD externo de un documento con SAX
 	public static void parseAndValidateWithExternalXSD(String xmlPath, String schemaPath, ContentHandler handler)
 			throws ParserConfigurationException, SAXException, IOException {
-		
+
 		// Construcción del schema
 		SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		Schema schema = schemaFactory.newSchema(new File(schemaPath));
-		
+
 		// Construcción del parser del documento.
 		SAXParserFactory parserFactory = SAXParserFactory.newInstance();
 		parserFactory.setValidating(false);
 		parserFactory.setNamespaceAware(true);
 		parserFactory.setSchema(schema);
-		
+
 		// Se añade el manejador de errores
 		SAXParser parser = parserFactory.newSAXParser();
 		XMLReader xmlReader = parser.getXMLReader();
 		xmlReader.setContentHandler(handler);
 		xmlReader.setErrorHandler(new SimpleErrorHandler());
-		
+
 		// Parsing
 		try (FileReader fileReader = new FileReader(new File(xmlPath))) {
 			xmlReader.parse(new InputSource(fileReader));
+		}
+
+	}
+
+	// Procesado de un documento con SAX
+	public static void parseFile(String xmlPath, ContentHandler handler)
+			throws SAXException, IOException, ParserConfigurationException {
+		
+		// Construcción del parser SAX
+		SAXParserFactory parserFactory = SAXParserFactory.newInstance();
+		parserFactory.setNamespaceAware(true);
+		
+		// Se añade el handler al parser SAX
+		SAXParser parser = parserFactory.newSAXParser();
+		XMLReader reader = parser.getXMLReader();
+		reader.setContentHandler(handler);
+		
+		// Parsing
+		try (FileReader fileReader = new FileReader(new File(xmlPath))) {
+			reader.parse(new InputSource(fileReader));
 		}
 		
 	}
