@@ -134,5 +134,9 @@ public class ConfigurationContentHandler extends DefaultHandler {
 			
 		}
 	}
+	
+	public Configuration getConfig() {
+		return configuration;
+	}
 
 }

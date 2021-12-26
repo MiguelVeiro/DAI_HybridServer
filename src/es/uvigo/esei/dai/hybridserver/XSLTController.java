@@ -17,6 +17,10 @@ public class XSLTController {
 	public String getContent(String uuid) {
 		return dao.getContent(uuid);
 	}
+	
+	public String getXsd(String uuid) {
+		return dao.getXsd(uuid);
+	}
 
 	public void add(String uuid, String xslt, String xsd) {
 		dao.add(uuid, xslt, xsd);

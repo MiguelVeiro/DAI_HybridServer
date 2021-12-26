@@ -9,5 +9,6 @@ public interface XSLTDAO {
 	public void delete(String uuid);
 	public Set<String> list();
  	public String getContent(String uuid);
+ 	public String getXsd(String uuid);
 
 }

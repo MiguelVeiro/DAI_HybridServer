@@ -14,6 +14,7 @@ import es.uvigo.esei.dai.hybridserver.http.HTTPParseException;
 import es.uvigo.esei.dai.hybridserver.http.HTTPRequest;
 import es.uvigo.esei.dai.hybridserver.http.HTTPResponse;
 import es.uvigo.esei.dai.hybridserver.http.HTTPResponseStatus;
+import es.uvigo.esei.dai.sax.SAXParserImplementation;
 
 public class ServerServiceThread implements Runnable {
 
@@ -105,8 +106,26 @@ public class ServerServiceThread implements Runnable {
 						response.setContent(stringBuilder.toString());
 
 					} else if (request.getResourceName().equals("xml")){
-
-						if (request.getResourceChain().equals("/xml")) {
+						String uuidXslt = request.getResourceParameters().get("xslt");
+						String uuidXml = request.getResourceParameters().get("uuid");
+						
+						if(uuidXslt!= null && uuidXml!= null) {
+							
+							
+							if(xsltProvider.contains(uuidXslt)) {
+							
+							String uuidXsd = xsltProvider.getXsd(uuidXslt);
+							SAXParserImplementation.parseAndValidateXSD(xmlProvider.getContent(uuidXml),
+						    		xsdProvider.getContent(uuidXsd));
+							}else {
+								throw new HTTPParseException("Not Found");
+							}
+							//coger excepcion si da fallo al validar
+						    
+							
+							
+							
+						}else if (request.getResourceChain().equals("/xml")) {
 							stringBuilder.append("<!DOCTYPE html>" + "<html lang=\"es\">" + "<head>"
 									+ "  <meta charset=\"utf-8\"/>" + "  <title>Hybrid Server</title>"
 									+ "  <link href=\"style.css\" rel=\"stylesheet\" />" + "</head>" + "<body>"

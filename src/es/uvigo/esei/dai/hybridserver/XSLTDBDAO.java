@@ -142,5 +142,32 @@ public class XSLTDBDAO implements XSLTDAO {
 		}
 		return lista;
 	}
+	
+	@Override
+	public String getXsd(String uuid) {
+
+		String toRet = "";
+
+		String query = "SELECT `xsd` FROM XSLT WHERE `uuid`=?";
+		try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+			
+			try (PreparedStatement statement = connection.prepareStatement(query)) {
+				
+				statement.setString(1, uuid);
+				
+				try (ResultSet result = statement.executeQuery()) {
+					result.next();
+					toRet = result.getString("xsd");
+				}
+	
+			} 
+		
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+	
+		return toRet;
+
+	}
 
 }
