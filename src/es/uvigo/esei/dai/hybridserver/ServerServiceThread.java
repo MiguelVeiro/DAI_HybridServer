@@ -8,7 +8,10 @@ import java.net.Socket;
 import java.util.Set;
 import java.util.UUID;
 
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.SAXException;
 
 import es.uvigo.esei.dai.hybridserver.http.HTTPParseException;
 import es.uvigo.esei.dai.hybridserver.http.HTTPRequest;
@@ -19,6 +22,7 @@ import es.uvigo.esei.dai.sax.SAXParserImplementation;
 public class ServerServiceThread implements Runnable {
 
 	private Socket socket;
+	
 	private HTMLController htmlProvider;
 	private XMLController xmlProvider;
 	private XSDController xsdProvider;
@@ -112,13 +116,20 @@ public class ServerServiceThread implements Runnable {
 						if(uuidXslt!= null && uuidXml!= null) {
 							
 							
-							if(xsltProvider.contains(uuidXslt)) {
+							if(!xsltProvider.contains(uuidXslt)) {
 							
-							String uuidXsd = xsltProvider.getXsd(uuidXslt);
-							SAXParserImplementation.parseAndValidateXSD(xmlProvider.getContent(uuidXml),
-						    		xsdProvider.getContent(uuidXsd));
+							throw new HTTPParseException("Not Found");
 							}else {
-								throw new HTTPParseException("Not Found");
+								String uuidXsd = xsltProvider.getXsd(uuidXslt);
+								try {
+								SAXParserImplementation.parseAndValidateXSD(xmlProvider.getContent(uuidXml),
+							    		xsdProvider.getContent(uuidXsd));
+								}catch(ParserConfigurationException | SAXException | IOException e){
+									throw new HTTPParseException("Bad Request");
+								}
+								response.setStatus(HTTPResponseStatus.S200);
+								response.putParameter("Content-Type", "application/xml");
+								response.setContent(xmlProvider.getContent(uuidXml));
 							}
 							//coger excepcion si da fallo al validar
 						    

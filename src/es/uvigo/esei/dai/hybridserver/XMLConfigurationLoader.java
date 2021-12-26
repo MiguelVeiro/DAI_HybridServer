@@ -30,7 +30,7 @@ public class XMLConfigurationLoader {
 		
 		ConfigurationContentHandler confContentHandler = new ConfigurationContentHandler();
 		SAXParserImplementation.parseAndValidateWithExternalXSD(xmlFile.getPath(),"configuration.xsd", confContentHandler);
-		 
+		//SAXParserImplementation.parseAndValidateWithInternalXSD(xmlFile.getPath(), confContentHandler); 
 		return confContentHandler.getConfig();
 	}
 }
