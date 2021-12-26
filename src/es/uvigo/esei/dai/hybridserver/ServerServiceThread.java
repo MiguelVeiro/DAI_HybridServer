@@ -18,6 +18,7 @@ import es.uvigo.esei.dai.hybridserver.http.HTTPRequest;
 import es.uvigo.esei.dai.hybridserver.http.HTTPResponse;
 import es.uvigo.esei.dai.hybridserver.http.HTTPResponseStatus;
 import es.uvigo.esei.dai.sax.SAXParserImplementation;
+import es.uvigo.esei.dai.sax.SAXTransformation;
 
 public class ServerServiceThread implements Runnable {
 
@@ -128,12 +129,12 @@ public class ServerServiceThread implements Runnable {
 									throw new HTTPParseException("Bad Request");
 								}
 								response.setStatus(HTTPResponseStatus.S200);
-								response.putParameter("Content-Type", "application/xml");
-								response.setContent(xmlProvider.getContent(uuidXml));
+								response.putParameter("Content-Type", "text/html");
+								String transform = SAXTransformation.transformWithXSLT(xmlProvider.getContent(uuidXml), 
+										xsltProvider.getContent(uuidXslt));
+								response.setContent(transform);
+								
 							}
-							//coger excepcion si da fallo al validar
-						    
-							
 							
 							
 						}else if (request.getResourceChain().equals("/xml")) {

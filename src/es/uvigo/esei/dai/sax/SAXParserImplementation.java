@@ -24,29 +24,29 @@ import org.xml.sax.XMLReader;
 
 public class SAXParserImplementation {
 
-	public static void parseAndValidateWithInternalXSD(
-			String xmlPath, ContentHandler handler
-			) throws ParserConfigurationException, SAXException, IOException {
-			// Construcción del parser del documento. Se activa
-			// la validación y comprobación de namespaces
-			SAXParserFactory parserFactory = SAXParserFactory.newInstance();
-			parserFactory.setValidating(true);
-			parserFactory.setNamespaceAware(true);
-			// Se añade el manejador de errores y se activa la validación
-			// por schema
-			SAXParser parser = parserFactory.newSAXParser();
-			parser.setProperty(
-			"http://java.sun.com/xml/jaxp/properties/schemaLanguage",
-			XMLConstants.W3C_XML_SCHEMA_NS_URI
-			);
-			XMLReader xmlReader = parser.getXMLReader();
-			xmlReader.setContentHandler(handler);
-			xmlReader.setErrorHandler(new SimpleErrorHandler());
-			// Parsing
-			try (FileReader fileReader = new FileReader(new File(xmlPath))) {
-			xmlReader.parse(new InputSource(fileReader));
-			}
-			}
+//	public static void parseAndValidateWithInternalXSD(
+//			String xmlPath, ContentHandler handler
+//			) throws ParserConfigurationException, SAXException, IOException {
+//			// Construcción del parser del documento. Se activa
+//			// la validación y comprobación de namespaces
+//			SAXParserFactory parserFactory = SAXParserFactory.newInstance();
+//			parserFactory.setValidating(true);
+//			parserFactory.setNamespaceAware(true);
+//			// Se añade el manejador de errores y se activa la validación
+//			// por schema
+//			SAXParser parser = parserFactory.newSAXParser();
+//			parser.setProperty(
+//			"http://java.sun.com/xml/jaxp/properties/schemaLanguage",
+//			XMLConstants.W3C_XML_SCHEMA_NS_URI
+//			);
+//			XMLReader xmlReader = parser.getXMLReader();
+//			xmlReader.setContentHandler(handler);
+//			xmlReader.setErrorHandler(new SimpleErrorHandler());
+//			// Parsing
+//			try (FileReader fileReader = new FileReader(new File(xmlPath))) {
+//			xmlReader.parse(new InputSource(fileReader));
+//			}
+//			}
 
 	// Procesado y validación con un XSD externo de un documento con SAX
 	public static void parseAndValidateWithExternalXSD(String xmlPath, String schemaPath, ContentHandler handler)
