@@ -69,7 +69,7 @@ public class HTMLDBDAO implements HTMLDAO {
 	
 			} 
 		
-		}catch (SQLException e) {
+		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
 	

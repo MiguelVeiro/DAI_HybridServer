@@ -76,6 +76,8 @@ public class HybridServer {
 		
 	}
 
+	//Entra un configuration y no un xml??
+	
 	public HybridServer(Configuration configuration) {
 		
 		System.out.println("444444444444444");
