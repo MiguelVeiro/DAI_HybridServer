@@ -44,6 +44,7 @@ public class HybridServer {
 	private ExecutorService threadPool;
 	private Configuration configuration;
 	private Endpoint endPoint; 
+	private int i=50000;
 	
 	public HybridServer() {
 		
@@ -104,10 +105,15 @@ public class HybridServer {
 
 	public void start() {
 		this.serverThread = new Thread() {
+			
+			
 			@Override
 			public void run() {
+				i++;
+				System.out.println("hola " + i);
+				String url=configuration.getWebServiceURL();
 				endPoint = Endpoint.publish(
-						"http://localhost:9876/ws", 
+						url, 
 						new WebServiceImplementation(
 								configuration.getDbURL(),
 								configuration.getDbPassword(),
