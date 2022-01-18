@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
@@ -19,6 +21,9 @@ import es.uvigo.esei.dai.hybridserver.http.HTTPResponse;
 import es.uvigo.esei.dai.hybridserver.http.HTTPResponseStatus;
 import es.uvigo.esei.dai.sax.SAXParserImplementation;
 import es.uvigo.esei.dai.sax.SAXTransformation;
+import es.uvigo.esei.dai.webservice.WebServiceConnection;
+import es.uvigo.esei.dai.webservice.ControllerService;
+import es.uvigo.esei.dai.webservice.WebServiceInterface;
 
 public class ServerServiceThread implements Runnable {
 
@@ -28,18 +33,21 @@ public class ServerServiceThread implements Runnable {
 	private XMLController xmlProvider;
 	private XSDController xsdProvider;
 	private XSLTController xsltProvider;
-
+	private List<ServerConfiguration> listServers;
+	
 	public ServerServiceThread(
 			Socket socket, 
 			HTMLController htmlProvider,
 			XMLController xmlProvider, 
 			XSDController xsdProvider, 
-			XSLTController xsltProvider) {
+			XSLTController xsltProvider,
+			List<ServerConfiguration> listServers) {
 		this.socket = socket;
 		this.htmlProvider = htmlProvider;
 		this.xmlProvider = xmlProvider;
 		this.xsdProvider = xsdProvider;
 		this.xsltProvider = xsltProvider;
+		this.listServers=listServers;
 	}
 
 	public void run() {
@@ -88,6 +96,29 @@ public class ServerServiceThread implements Runnable {
 								response.putParameter("Content-Type", "text/html");
 								response.setContent(htmlProvider.getContent(uuid));
 							} else {
+								String content= null;
+								Iterator i = listServers.iterator();
+								while(i.hasNext() && content==null) {
+									ServerConfiguration serverConfiguration = (ServerConfiguration) i.next();
+									WebServiceConnection wsc= new WebServiceConnection(
+											serverConfiguration.getName(),
+											serverConfiguration.getWsdl(),
+											serverConfiguration.getNamespace(),
+											serverConfiguration.getService(),
+											serverConfiguration.getHttpAddress()
+									);
+									
+									WebServiceInterface ws = wsc.setConnection();
+								       content = ws.getHtmlContent(uuid);
+								       System.err.println("Conteeeeeeeeeeent: " + content);
+									if(content!=null) {
+										response.setStatus(HTTPResponseStatus.S200);
+										response.putParameter("Content-Type", "text/html");
+										response.setContent(content);
+									}
+								}
+								
+								if(content==null)
 								throw new HTTPParseException("Not Found");
 							}
 
@@ -219,6 +250,7 @@ public class ServerServiceThread implements Runnable {
 								response.putParameter("Content-Type", "application/xml");
 								response.setContent(xsdProvider.getContent(uuid));
 							} else {
+								
 								throw new HTTPParseException("Not Found");
 							}
 

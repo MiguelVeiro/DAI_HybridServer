@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 import javax.xml.ws.Endpoint;
 
 import es.uvigo.esei.dai.sax.SAXParserImplementation;
-import es.uvigo.esei.dai.webservice.WebServiceImplementation;
+import es.uvigo.esei.dai.webservice.ControllerService;
 
 public class HybridServer {
 
@@ -44,7 +44,6 @@ public class HybridServer {
 	private ExecutorService threadPool;
 	private Configuration configuration;
 	private Endpoint endPoint; 
-	private int i=50000;
 	
 	public HybridServer() {
 		
@@ -109,12 +108,11 @@ public class HybridServer {
 			
 			@Override
 			public void run() {
-				i++;
-				System.out.println("hola " + i);
+				
 				String url=configuration.getWebServiceURL();
 				endPoint = Endpoint.publish(
 						url, 
-						new WebServiceImplementation(
+						new ControllerService(
 								configuration.getDbURL(),
 								configuration.getDbPassword(),
 								configuration.getDbUser()
@@ -127,7 +125,7 @@ public class HybridServer {
 						if (stop)
 							break;
 						ServerServiceThread serviceTask = 
-								new ServerServiceThread(socket, htmlController, xmlController, xsdController, xsltController);
+								new ServerServiceThread(socket, htmlController, xmlController, xsdController, xsltController,configuration.getServers());
 						threadPool.execute(serviceTask);
 					}
 				} catch (IOException e) {

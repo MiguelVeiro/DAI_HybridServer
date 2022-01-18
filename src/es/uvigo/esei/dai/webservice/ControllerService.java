@@ -14,11 +14,11 @@ import es.uvigo.esei.dai.hybridserver.XSLTDBDAO;
 		serviceName = "HybridServerService",
 		targetNamespace = "http://hybridserver.dai.esei.uvigo.es/"
 )
-public class WebServiceImplementation implements WebServiceInterface {
+public class ControllerService implements WebServiceInterface {
 
 	String DB_URL, DB_PASSWORD, DB_USER;
 	
-	public WebServiceImplementation (String DB_URL, String DB_PASSWORD, String DB_USER) {
+	public ControllerService (String DB_URL, String DB_PASSWORD, String DB_USER) {
 		this.DB_URL = DB_URL;
 		this.DB_PASSWORD = DB_PASSWORD;
 		this.DB_USER = DB_USER;
