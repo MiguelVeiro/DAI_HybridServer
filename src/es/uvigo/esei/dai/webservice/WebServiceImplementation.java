@@ -2,11 +2,18 @@ package es.uvigo.esei.dai.webservice;
 
 import java.util.Set;
 
+import javax.jws.WebService;
+
 import es.uvigo.esei.dai.hybridserver.HTMLDBDAO;
 import es.uvigo.esei.dai.hybridserver.XMLDBDAO;
 import es.uvigo.esei.dai.hybridserver.XSDDBDAO;
 import es.uvigo.esei.dai.hybridserver.XSLTDBDAO;
 
+@WebService(
+		endpointInterface = "es.uvigo.esei.dai.webservice.WebServiceInterface",
+		serviceName = "HybridServerService",
+		targetNamespace = "http://hybridserver.dai.esei.uvigo.es/"
+)
 public class WebServiceImplementation implements WebServiceInterface {
 
 	String DB_URL, DB_PASSWORD, DB_USER;

@@ -26,7 +26,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+import javax.xml.ws.Endpoint;
+
 import es.uvigo.esei.dai.sax.SAXParserImplementation;
+import es.uvigo.esei.dai.webservice.WebServiceImplementation;
 
 public class HybridServer {
 
@@ -39,6 +42,8 @@ public class HybridServer {
 	private XSDController xsdController;
 	private XSLTController xsltController;
 	private ExecutorService threadPool;
+	private Configuration configuration;
+	private Endpoint endPoint; 
 	
 	public HybridServer() {
 		
@@ -75,13 +80,11 @@ public class HybridServer {
 		xsltController = new XSLTController(new XSLTDBDAO(DB_URL,DB_PASSWORD,DB_USER));
 		
 	}
-
-	//Entra un configuration y no un xml??
 	
 	public HybridServer(Configuration configuration) {
-		
-		System.out.println("444444444444444");
 
+		this.configuration = configuration;
+		
 		String DB_USER = configuration.getDbUser();
 		String DB_PASSWORD = configuration.getDbPassword();
 		String DB_URL = configuration.getDbURL();
@@ -103,6 +106,14 @@ public class HybridServer {
 		this.serverThread = new Thread() {
 			@Override
 			public void run() {
+				endPoint = Endpoint.publish(
+						"http://localhost:9876/ws", 
+						new WebServiceImplementation(
+								configuration.getDbURL(),
+								configuration.getDbPassword(),
+								configuration.getDbUser()
+						)
+				);
 				try (final ServerSocket serverSocket = new ServerSocket(SERVICE_PORT)) {
 					threadPool = Executors.newFixedThreadPool(NUM_CLIENTS);	
 					while (true) {
@@ -126,6 +137,8 @@ public class HybridServer {
 	public void stop() {
 		
 		this.stop = true;
+		
+		endPoint.stop();
 
 		try (Socket socket = new Socket("localhost", SERVICE_PORT)) {
 			// Esta conexión se hace, simplemente, para "despertar" el hilo servidor
