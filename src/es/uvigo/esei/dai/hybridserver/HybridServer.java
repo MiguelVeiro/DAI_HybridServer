@@ -18,6 +18,7 @@
 package es.uvigo.esei.dai.hybridserver;
 
 import java.io.IOException;
+import java.net.BindException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Map;
@@ -42,59 +43,59 @@ public class HybridServer {
 	private XSDController xsdController;
 	private XSLTController xsltController;
 	private ExecutorService threadPool;
-	private Configuration configuration;
-	private Endpoint endPoint; 
-	
+	private Configuration configuration=null;
+	private Endpoint endPoint=null;
+
 	public HybridServer() {
-		
+
 		String DB_USER = "hsdb";
 		String DB_PASSWORD = "hsdbpass";
 		this.NUM_CLIENTS = 50;
 		String DB_URL = "jdbc:mysql://localhost:3306/hstestdb";
 		this.SERVICE_PORT = 8888;
 
-		htmlController = new HTMLController(new HTMLDBDAO(DB_URL,DB_PASSWORD,DB_USER));
+		htmlController = new HTMLController(new HTMLDBDAO(DB_URL, DB_PASSWORD, DB_USER));
 		System.err.println("1111111111111111");
-		
+
 	}
 
 	public HybridServer(Map<String, String> pages) {
 		htmlController = new HTMLController(new HTMLMapDAO(pages));
 		this.SERVICE_PORT = 8888;
-	    this.NUM_CLIENTS = 50;
+		this.NUM_CLIENTS = 50;
 	}
 
 	public HybridServer(Properties properties) {
-		
+
 		System.out.println("333333333333333");
-	
+
 		String DB_USER = properties.getProperty("db.user");
 		String DB_PASSWORD = properties.getProperty("db.password");
 		String DB_URL = properties.getProperty("db.url");
 		SERVICE_PORT = Integer.parseInt(properties.getProperty("port"));
 		NUM_CLIENTS = Integer.parseInt(properties.getProperty("numClients"));
 
-		htmlController = new HTMLController(new HTMLDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xmlController = new XMLController(new XMLDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xsdController = new XSDController(new XSDDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xsltController = new XSLTController(new XSLTDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		
+		htmlController = new HTMLController(new HTMLDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xmlController = new XMLController(new XMLDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xsdController = new XSDController(new XSDDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xsltController = new XSLTController(new XSLTDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+
 	}
-	
+
 	public HybridServer(Configuration configuration) {
 
 		this.configuration = configuration;
-		
+		System.out.println(configuration.getDbURL());
 		String DB_USER = configuration.getDbUser();
 		String DB_PASSWORD = configuration.getDbPassword();
 		String DB_URL = configuration.getDbURL();
 		SERVICE_PORT = configuration.getHttpPort();
 		NUM_CLIENTS = configuration.getNumClients();
 
-		htmlController = new HTMLController(new HTMLDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xmlController = new XMLController(new XMLDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xsdController = new XSDController(new XSDDBDAO(DB_URL,DB_PASSWORD,DB_USER));
-		xsltController = new XSLTController(new XSLTDBDAO(DB_URL,DB_PASSWORD,DB_USER));
+		htmlController = new HTMLController(new HTMLDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xmlController = new XMLController(new XMLDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xsdController = new XSDController(new XSDDBDAO(DB_URL, DB_PASSWORD, DB_USER));
+		xsltController = new XSLTController(new XSLTDBDAO(DB_URL, DB_PASSWORD, DB_USER));
 
 	}
 
@@ -104,29 +105,36 @@ public class HybridServer {
 
 	public void start() {
 		this.serverThread = new Thread() {
-			
-			
+
 			@Override
 			public void run() {
+
 				
-				String url=configuration.getWebServiceURL();
-				endPoint = Endpoint.publish(
-						url, 
-						new ControllerService(
-								configuration.getDbURL(),
-								configuration.getDbPassword(),
-								configuration.getDbUser()
-						)
-				);
 				try (final ServerSocket serverSocket = new ServerSocket(SERVICE_PORT)) {
-					threadPool = Executors.newFixedThreadPool(NUM_CLIENTS);	
+					threadPool = Executors.newFixedThreadPool(NUM_CLIENTS);
+					try {
+						String url = configuration.getWebServiceURL();
+						endPoint = Endpoint.publish(url, new ControllerService(configuration.getDbURL(),
+								configuration.getDbPassword(), configuration.getDbUser()));
+						endPoint.setExecutor(threadPool);
+					}catch(IllegalArgumentException | NullPointerException ex) {
+						
+					}
+					
 					while (true) {
 						Socket socket = serverSocket.accept();
 						if (stop)
 							break;
-						ServerServiceThread serviceTask = 
-								new ServerServiceThread(socket, htmlController, xmlController, xsdController, xsltController,configuration.getServers());
-						threadPool.execute(serviceTask);
+						try{
+							ServerServiceThread serviceTask = new ServerServiceThread(socket, htmlController, xmlController,
+									xsdController, xsltController, configuration.getServers());
+							threadPool.execute(serviceTask);
+						}catch(NullPointerException e) {
+							ServerServiceThread serviceTask = new ServerServiceThread(socket, htmlController, xmlController,
+									xsdController, xsltController, null);
+							threadPool.execute(serviceTask);
+						}
+						
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
@@ -139,11 +147,11 @@ public class HybridServer {
 	}
 
 	public void stop() {
-		
-		this.stop = true;
-		
-		endPoint.stop();
 
+		this.stop = true;
+		if(endPoint!=null)
+			endPoint.stop();
+		
 		try (Socket socket = new Socket("localhost", SERVICE_PORT)) {
 			// Esta conexión se hace, simplemente, para "despertar" el hilo servidor
 		} catch (IOException e) {
@@ -157,14 +165,14 @@ public class HybridServer {
 		}
 
 		this.serverThread = null;
-		
+
 		threadPool.shutdownNow();
-		 
+
 		try {
-		  threadPool.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
+			threadPool.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
 		} catch (InterruptedException e) {
-		  e.printStackTrace();
+			e.printStackTrace();
 		}
-		
+
 	}
 }
