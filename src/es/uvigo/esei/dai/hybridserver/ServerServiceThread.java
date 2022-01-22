@@ -306,7 +306,7 @@ public class ServerServiceThread implements Runnable {
 
 							// archivos locales
 							for (String set : xmlProvider.list()) {
-								stringBuilder.append("<li><a href=\"http://localhost:" + port + "/html?uuid=" + set
+								stringBuilder.append("<li><a href=\"http://localhost:" + port + "/xml?uuid=" + set
 										+ "\">" + set + "</a></li>");
 							}
 
@@ -395,7 +395,7 @@ public class ServerServiceThread implements Runnable {
 									WebServiceInterface connection = (WebServiceInterface) iConnections.next();
 									Set<String> uuidsXslt = connection.getXsltUuids();
 									for (String uuidXslt : uuidsXslt) {
-										stringBuilder.append("<li><a href=\"" + info.getHttpAddress() + "xml?uuid="
+										stringBuilder.append("<li><a href=\"" + info.getHttpAddress() + "xslt?uuid="
 												+ uuidXslt + "\">" + uuidXslt + "</a></li>");
 									}
 									stringBuilder.append("</ol>");
@@ -457,7 +457,7 @@ public class ServerServiceThread implements Runnable {
 									+ "<h1>Hybrid Server</h1>" + "<ol>");
 							// archivos locales
 							for (String set : xsdProvider.list()) {
-								stringBuilder.append("<li><a href=\"http://localhost:" + port + "/xsdt?uuid=" + set
+								stringBuilder.append("<li><a href=\"http://localhost:" + port + "/xsd?uuid=" + set
 										+ "\">" + set + "</a></li>");
 							}
 							// archivos remotos
@@ -471,7 +471,7 @@ public class ServerServiceThread implements Runnable {
 									WebServiceInterface connection = (WebServiceInterface) iConnections.next();
 									Set<String> uuidsXsd = connection.getXsdUuids();
 									for (String uuidXsd : uuidsXsd) {
-										stringBuilder.append("<li><a href=\"" + info.getHttpAddress() + "xml?uuid="
+										stringBuilder.append("<li><a href=\"" + info.getHttpAddress() + "xsd?uuid="
 												+ uuidXsd + "\">" + uuidXsd + "</a></li>");
 									}
 									stringBuilder.append("</ol>");
