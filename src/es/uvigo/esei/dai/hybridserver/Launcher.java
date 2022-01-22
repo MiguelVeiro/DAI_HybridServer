@@ -26,7 +26,7 @@ public class Launcher {
 	public static void main(String[] args) {
 		if (args.length == 0) {
 			new HybridServer().start();
-		} else if (args.length == 1) {
+		} else if (args.length == 2) {
 //			Properties properties = new Properties();
 //			try {
 //				FileInputStream fileInput = new FileInputStream(new File(args[0])); 
@@ -39,10 +39,13 @@ public class Launcher {
 //			}
 			
 			File configFile = new File(args[0]);
+			File configFile2 = new File(args[1]);
 			XMLConfigurationLoader configLoader = new XMLConfigurationLoader();
 			try {
 				Configuration configuration = configLoader.load(configFile);
+				Configuration configuration2 = configLoader.load(configFile2);
 				new HybridServer(configuration).start();
+				new HybridServer(configuration2).start();
 			} catch (Exception e) {
 				System.err.println("Something went wrong with the " + args[0] + "file: ");
 				e.printStackTrace();
