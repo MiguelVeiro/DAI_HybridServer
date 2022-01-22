@@ -27,13 +27,23 @@ public class Launcher {
 		if (args.length == 0) {
 			new HybridServer().start();
 		} else if (args.length == 1) {
-			Properties properties = new Properties();
+//			Properties properties = new Properties();
+//			try {
+//				FileInputStream fileInput = new FileInputStream(new File(args[0])); 
+//				properties.load(fileInput);
+//				new HybridServer(properties).start();
+//				fileInput.close();
+//			} catch (IOException e) {
+//				System.err.println("Something went wrong with the " + args[0] + "file: ");
+//				e.printStackTrace();
+//			}
+			
+			File configFile = new File(args[0]);
+			XMLConfigurationLoader configLoader = new XMLConfigurationLoader();
 			try {
-				FileInputStream fileInput = new FileInputStream(new File(args[0])); 
-				properties.load(fileInput);
-				new HybridServer(properties).start();
-				fileInput.close();
-			} catch (IOException e) {
+				Configuration configuration = configLoader.load(configFile);
+				new HybridServer(configuration).start();
+			} catch (Exception e) {
 				System.err.println("Something went wrong with the " + args[0] + "file: ");
 				e.printStackTrace();
 			}

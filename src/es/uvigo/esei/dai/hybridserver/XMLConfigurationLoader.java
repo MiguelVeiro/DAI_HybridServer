@@ -24,7 +24,6 @@ import es.uvigo.esei.dai.sax.SAXParserImplementation;
 
 public class XMLConfigurationLoader {
 	
-	
 	// Implementar en la semana 9.
 	public Configuration load(File xmlFile) throws Exception {
 		

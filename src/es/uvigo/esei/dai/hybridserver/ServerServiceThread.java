@@ -167,8 +167,6 @@ public class ServerServiceThread implements Runnable {
 
 											WebServiceInterface ws = wsc.setConnection();
 											Set<String> uuidsHtml = ws.getHtmlUuids();
-											System.err.println(serverConfiguration.getName());
-											System.err.println(uuid);
 											if (uuidsHtml.contains(uuid)) {
 												content = ws.getHtmlContent(uuid);
 												response.setStatus(HTTPResponseStatus.S200);
@@ -355,8 +353,6 @@ public class ServerServiceThread implements Runnable {
 
 										WebServiceInterface ws = wsc.setConnection();
 										Set<String> uuidsXml = ws.getXmlUuids();
-										System.err.println(serverConfiguration.getName());
-										System.err.println(uuid);
 										if (uuidsXml.contains(uuid)) {
 											content = ws.getXmlContent(uuid);
 											response.setStatus(HTTPResponseStatus.S200);
@@ -433,8 +429,6 @@ public class ServerServiceThread implements Runnable {
 
 											WebServiceInterface ws = wsc.setConnection();
 											Set<String> uuidsXslt = ws.getXsltUuids();
-											System.err.println(serverConfiguration.getName());
-											System.err.println(uuid);
 											if (uuidsXslt.contains(uuid)) {
 												content = ws.getXsltContent(uuid);
 												response.setStatus(HTTPResponseStatus.S200);
@@ -511,8 +505,6 @@ public class ServerServiceThread implements Runnable {
 
 											WebServiceInterface ws = wsc.setConnection();
 											Set<String> uuidsXsd = ws.getXsdUuids();
-											System.err.println(serverConfiguration.getName());
-											System.err.println(uuid);
 											if (uuidsXsd.contains(uuid)) {
 												content = ws.getXsdContent(uuid);
 												response.setStatus(HTTPResponseStatus.S200);

@@ -83,6 +83,8 @@ public class HybridServer {
 	}
 
 	public HybridServer(Configuration configuration) {
+		
+		System.out.println("4444444444");
 
 		this.configuration = configuration;
 		System.out.println(configuration.getDbURL());
