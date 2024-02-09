@@ -4,5 +4,5 @@ This project creates a server that sends and creates XML files based on configur
 
 # Authors
 ##### Grupo 1.3
-Miguel Veiro Romero, 39514532A
-Martín Pereira González, 39457591X
+Miguel Veiro Romero
+Martín Pereira González
